@@ -1,0 +1,36 @@
+<html>
+  <head>
+  <link rel="stylesheet" href="style.css">  
+  </head>
+  <title> Family Book</title>
+  <body>
+    <h1> Family Book</h1>
+    <hr> <hr>
+    <img id="family_img" src="family.jpg">
+    <h3 id="one"> Our Family Book</h3>
+     <button type="button" onclick="family()">Next</button>
+<hr>
+   <script>
+   var names=[
+   "My Father (Shyam Sundar)",
+   "My Mother (Dhana Lakshmi)",
+   "My Brother (Lochan)",
+   "Me (Kaasish)"
+   ];
+ var images=[
+  src="https://t4.ftcdn.net/jpg/01/38/71/15/360_F_138711505_K9YfscnIghBdBE1MvQbgUGixdRNKEg2P.jpg",
+  src="https://e7.pngegg.com/pngimages/392/734/png-clipart-mother-cartoon-mother-child-face.png",
+  src="https://banner2.cleanpng.com/20180519/rgi/kisspng-brother-stock-photography-clip-art-5b00cc9f15af10.3178187215267790390888.jpg",
+  src="https://i.pinimg.com/736x/77/d4/15/77d41520a3f07995b184797a3734bf44.jpg"
+ ];
+ var i=0;
+ function family(){
+   document.getElementById("one").innerHTML=names[i];
+   document.getElementById("family_img").src=images[i];
+   i++;
+   if(i==4){
+     i=0;
+   }}
+  </script>
+  <script async src="https://drv.tw/inc/wd.js"></script></body>
+</html>
